@@ -67,7 +67,7 @@ class StandardDataPacket extends Row {
       case FIELD_TYPE_DATETIME: // datetime
       case FIELD_TYPE_TIMESTAMP: // timestamp
         var s = utf8.decode(list);
-        return DateTime.parse(s).toUtc();
+        return DateTime.parse(s);
         break;
       case FIELD_TYPE_TIME: // time
         var s = utf8.decode(list);

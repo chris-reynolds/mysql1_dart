@@ -141,7 +141,7 @@ class BinaryDataPacket extends Row {
           }
         }
 
-        var value = DateTime.utc(
+        var value = DateTime(
             year, month, day, hours, minutes, seconds, billionths ~/ 1000000);
         log.fine('Value: ${value}');
         return value;
